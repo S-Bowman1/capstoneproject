@@ -1,14 +1,21 @@
 import React from "react";
-import Hero from './Hero.js'
+import { Route, Routes } from "react-router-dom";
+import Homepage from "./Homepage.js";
+import Chicago from "./Chicago.js";
+import BookingPage from "./BookingPage.js";
+import Specials from "./Specials.js";
+
+
 
 const Main = () => {
   return (
     <main>
-      <Hero />
-        <h2>
-         This is the Main Section
-        </h2>
-        <p>Lorem Ipsum</p>
+<Routes> 
+    <Route path="/" element={<Homepage />}></Route>
+    <Route path="/booking" element={<BookingPage />}></Route>
+    <Route path="/about" element={<Chicago />}></Route>
+    <Route path="/menu" element={<Specials />}></Route>
+</Routes>
     </main>
   );
   }
