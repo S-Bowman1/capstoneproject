@@ -1,10 +1,11 @@
 import React from "react";
+import BookingForm from "./BookingForm.js"
 
 const BookingPage = () => {
   return (
-      <div className="about">
-        <h1>booking</h1>
-      </div>
+      <>
+        <BookingForm />
+      </>
   );
   }
 

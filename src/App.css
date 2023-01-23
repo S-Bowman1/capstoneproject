@@ -20,6 +20,14 @@
   }
 }
 
+.bookingform {
+  display: grid;
+  max-width: 200px;
+  gap: 20px;
+  justify-items: center;
+  margin: auto;
+}
+
 header {
   grid-area: header;
   padding: 10px;
