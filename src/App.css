@@ -20,12 +20,21 @@
   }
 }
 
+.bookingwrapper {
+display: grid;
+justify-items: center;
+}
+
 .bookingform {
-  display: grid;
-  max-width: 200px;
+  max-width: 400px;
   gap: 20px;
   justify-items: center;
   margin: auto;
+  padding: 20px;
+}
+
+.bookingform fieldset {
+  display: grid;
 }
 
 header {
