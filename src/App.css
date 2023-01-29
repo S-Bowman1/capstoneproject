@@ -53,6 +53,11 @@ h1, h2, h3, h4 {
   font-family: var(--llhfont);
 }
 
+h2 {
+  font-size: 38px;
+  margin-top: 0px;
+}
+
 header {
   grid-area: header;
   padding-top: 10px;
