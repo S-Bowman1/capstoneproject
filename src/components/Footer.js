@@ -1,15 +1,18 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
 
 const Footer = () => {
   return (
     <footer>
-        <ul>
-            <li>Home</li>
-            <li>Link1</li>
-            <li>Link2</li>
-            <li>Link3</li>
-        </ul>
+<h2>Follow us!</h2>
+<div className="socialicons">
+<a><FontAwesomeIcon icon="fa-brands fa-facebook" /></a>
+<a><FontAwesomeIcon icon="fa-brands fa-twitter" /></a>
+<a><FontAwesomeIcon icon="fa-brands fa-instagram" /></a>
+
+</div>
     </footer>
   );
   }

@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap');
+
+:root {
+  --llgreen: #495E57;
+  --llyellow: #F4CE14;
+  --llpfont: 'Karla', sans-serif;
+  --llhfont: 'Markazi Text', serif;
+}
+
+
 
 .container {
   display: grid;
@@ -8,6 +19,7 @@
   "header" 
   "main" 
   "footer";
+  font-family: var(--llpfont)
 }
 
 @media (min-width: 600px) {
@@ -37,10 +49,13 @@ justify-items: center;
   display: grid;
 }
 
+h1, h2, h3, h4 {
+  font-family: var(--llhfont);
+}
+
 header {
   grid-area: header;
-  padding: 10px;
-  background-color: blue;
+  padding-top: 10px;
   color: #fff;
   text-align: center;
 }
@@ -49,13 +64,25 @@ header {
   grid-area: nav;
   text-align: center;
   list-style: none;
-  background-color: purple;
+  
+}
+
+.navbar a{
+  color: var(--llgreen);
+  transition: 0.5s;
+}
+
+.navbar a:hover {
+  color: var(--llyellow);
 }
 
 .navbar li {
   display: inline;
   padding: 10px;
   padding-right: 50px;
+  font-family: var(--llhfont);
+  font-size: 28px;
+  
 }
 
 main {
@@ -74,7 +101,7 @@ main {
 footer {
   grid-area: footer;
   padding: 10px;
-  background-color: orange;
+  background-color: var(--llgreen);
   color: #fff;
   text-align: center;
 }
@@ -84,7 +111,7 @@ footer {
 }
 
 .hero {
-  width: 70%;
+  width: 100%;
   height: 500px;
   margin: 0 auto;
   background-position: center;
@@ -94,8 +121,23 @@ footer {
 
 .title {
   padding: 50px 0px 10px 50px;
+  font-size: 38px;
+}
+.subtitle {
+  font-size: 28px;
 }
 
-.subtitle {
-  padding-left: 50px;
+.subtitle, .description {
+  padding: 0px 50px 10px 50px;
+}
+
+.socialicons a{
+  padding: 10px;
+  color: var(--llyellow);
+  font-size: 28px;
+  transition: 0.5s;
+}
+
+.socialicons a:hover {
+  color: white;
 }
